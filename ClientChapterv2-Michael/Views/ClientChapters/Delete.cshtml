@@ -1,0 +1,528 @@
+﻿@model ClientChapterv2_Michael.ClientChapter
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ClientChapter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.chapter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chapter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tstate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tstate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chap_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chap_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.area_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.area_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.env1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.env1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.env2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.env2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.env3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.env3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.env4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.env4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.taddr1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.taddr1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.taddr2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.taddr2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.taddr3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.taddr3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tcity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tcity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tzip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tzip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.whokey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.whokey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tran_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tran_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uw)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uw)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.commander)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.commander)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comm_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comm_title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ctype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ctype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.billchap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.billchap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comm_lname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comm_lname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.oldchap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oldchap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.memo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.memo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cust_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cust_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.invchap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.invchap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nl_tag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nl_tag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.origcid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.origcid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.origiid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.origiid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.webadd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.webadd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.region)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.region)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lockbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lockbox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uwblackfm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uwblackfm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uwblackto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uwblackto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.md_coord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.md_coord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.commander2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.commander2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.commtitle2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.commtitle2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.commlname2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.commlname2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.billchap2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.billchap2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mspthanks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mspthanks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastthank)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastthank)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seedname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seedname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.env5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.env5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.origname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.origname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chapdesig)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chapdesig)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.division)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.division)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.site_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.site_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tsm_enters)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tsm_enters)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.envcity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.envcity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.envstate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.envstate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.envzip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.envzip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedBy)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TSMAppsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ClientChapter">
+          <Key>
+            <PropertyRef Name="ClientChapterSKey" />
+          </Key>
+          <Property Name="ClientChapterSKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="chapter" Type="varchar(max)" />
+          <Property Name="tstate" Type="varchar(max)" />
+          <Property Name="chap_name" Type="varchar(max)" />
+          <Property Name="iid" Type="varchar(max)" />
+          <Property Name="area_name" Type="varchar(max)" />
+          <Property Name="env1" Type="varchar(max)" />
+          <Property Name="env2" Type="varchar(max)" />
+          <Property Name="env3" Type="varchar(max)" />
+          <Property Name="env4" Type="varchar(max)" />
+          <Property Name="tname" Type="varchar(max)" />
+          <Property Name="taddr1" Type="varchar(max)" />
+          <Property Name="taddr2" Type="varchar(max)" />
+          <Property Name="taddr3" Type="varchar(max)" />
+          <Property Name="tcity" Type="varchar(max)" />
+          <Property Name="tzip" Type="varchar(max)" />
+          <Property Name="whokey" Type="varchar(max)" />
+          <Property Name="tran_date" Type="varchar(max)" />
+          <Property Name="uw" Type="varchar(max)" />
+          <Property Name="commander" Type="varchar(max)" />
+          <Property Name="comm_title" Type="varchar(max)" />
+          <Property Name="cid" Type="varchar(max)" />
+          <Property Name="ctype" Type="varchar(max)" />
+          <Property Name="billchap" Type="varchar(max)" />
+          <Property Name="comm_lname" Type="varchar(max)" />
+          <Property Name="phone" Type="varchar(max)" />
+          <Property Name="fax" Type="varchar(max)" />
+          <Property Name="email" Type="varchar(max)" />
+          <Property Name="oldchap" Type="varchar(max)" />
+          <Property Name="memo" Type="varchar(max)" />
+          <Property Name="cust_no" Type="varchar(max)" />
+          <Property Name="invchap" Type="varchar(max)" />
+          <Property Name="nl_tag" Type="varchar(max)" />
+          <Property Name="origcid" Type="varchar(max)" />
+          <Property Name="origiid" Type="varchar(max)" />
+          <Property Name="webadd" Type="varchar(max)" />
+          <Property Name="region" Type="varchar(max)" />
+          <Property Name="lockbox" Type="varchar(max)" />
+          <Property Name="uwblackfm" Type="varchar(max)" />
+          <Property Name="uwblackto" Type="varchar(max)" />
+          <Property Name="md_coord" Type="varchar(max)" />
+          <Property Name="commander2" Type="varchar(max)" />
+          <Property Name="commtitle2" Type="varchar(max)" />
+          <Property Name="commlname2" Type="varchar(max)" />
+          <Property Name="billchap2" Type="varchar(max)" />
+          <Property Name="email2" Type="varchar(max)" />
+          <Property Name="mspthanks" Type="varchar(max)" />
+          <Property Name="lastthank" Type="varchar(max)" />
+          <Property Name="seedname" Type="varchar(max)" />
+          <Property Name="env5" Type="varchar(max)" />
+          <Property Name="origname" Type="varchar(max)" />
+          <Property Name="clientname" Type="varchar(max)" />
+          <Property Name="chapdesig" Type="varchar(max)" />
+          <Property Name="division" Type="varchar(max)" />
+          <Property Name="active" Type="varchar(max)" />
+          <Property Name="site_id" Type="varchar(max)" />
+          <Property Name="tsm_enters" Type="varchar(max)" />
+          <Property Name="envcity" Type="varchar(max)" />
+          <Property Name="envstate" Type="varchar(max)" />
+          <Property Name="envzip" Type="varchar(max)" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="TSMAppsModelStoreContainer">
+          <EntitySet Name="ClientChapter" EntityType="Self.ClientChapter" Schema="cc" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TSMAppsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ClientChapter">
+          <Key>
+            <PropertyRef Name="ClientChapterSKey" />
+          </Key>
+          <Property Name="ClientChapterSKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="chapter" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="tstate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="chap_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="iid" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="area_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="env1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="env2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="env3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="env4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="tname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="taddr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="taddr2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="taddr3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="tcity" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="tzip" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="whokey" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="tran_date" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="uw" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="commander" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="comm_title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cid" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ctype" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="billchap" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="comm_lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="fax" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="oldchap" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="memo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cust_no" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="invchap" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="nl_tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="origcid" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="origiid" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="webadd" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="region" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lockbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="uwblackfm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="uwblackto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="md_coord" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="commander2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="commtitle2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="commlname2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="billchap2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="email2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="mspthanks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lastthank" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="seedname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="env5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="origname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="clientname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="chapdesig" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="division" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="active" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="site_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="tsm_enters" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="envcity" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="envstate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="envzip" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="TSMAppsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ClientChapters" EntityType="Self.ClientChapter" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TSMAppsModelStoreContainer" CdmEntityContainer="TSMAppsEntities">
+          <EntitySetMapping Name="ClientChapters">
+            <EntityTypeMapping TypeName="TSMAppsModel.ClientChapter">
+              <MappingFragment StoreEntitySet="ClientChapter">
+                <ScalarProperty Name="ClientChapterSKey" ColumnName="ClientChapterSKey" />
+                <ScalarProperty Name="chapter" ColumnName="chapter" />
+                <ScalarProperty Name="tstate" ColumnName="tstate" />
+                <ScalarProperty Name="chap_name" ColumnName="chap_name" />
+                <ScalarProperty Name="iid" ColumnName="iid" />
+                <ScalarProperty Name="area_name" ColumnName="area_name" />
+                <ScalarProperty Name="env1" ColumnName="env1" />
+                <ScalarProperty Name="env2" ColumnName="env2" />
+                <ScalarProperty Name="env3" ColumnName="env3" />
+                <ScalarProperty Name="env4" ColumnName="env4" />
+                <ScalarProperty Name="tname" ColumnName="tname" />
+                <ScalarProperty Name="taddr1" ColumnName="taddr1" />
+                <ScalarProperty Name="taddr2" ColumnName="taddr2" />
+                <ScalarProperty Name="taddr3" ColumnName="taddr3" />
+                <ScalarProperty Name="tcity" ColumnName="tcity" />
+                <ScalarProperty Name="tzip" ColumnName="tzip" />
+                <ScalarProperty Name="whokey" ColumnName="whokey" />
+                <ScalarProperty Name="tran_date" ColumnName="tran_date" />
+                <ScalarProperty Name="uw" ColumnName="uw" />
+                <ScalarProperty Name="commander" ColumnName="commander" />
+                <ScalarProperty Name="comm_title" ColumnName="comm_title" />
+                <ScalarProperty Name="cid" ColumnName="cid" />
+                <ScalarProperty Name="ctype" ColumnName="ctype" />
+                <ScalarProperty Name="billchap" ColumnName="billchap" />
+                <ScalarProperty Name="comm_lname" ColumnName="comm_lname" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="fax" ColumnName="fax" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="oldchap" ColumnName="oldchap" />
+                <ScalarProperty Name="memo" ColumnName="memo" />
+                <ScalarProperty Name="cust_no" ColumnName="cust_no" />
+                <ScalarProperty Name="invchap" ColumnName="invchap" />
+                <ScalarProperty Name="nl_tag" ColumnName="nl_tag" />
+                <ScalarProperty Name="origcid" ColumnName="origcid" />
+                <ScalarProperty Name="origiid" ColumnName="origiid" />
+                <ScalarProperty Name="webadd" ColumnName="webadd" />
+                <ScalarProperty Name="region" ColumnName="region" />
+                <ScalarProperty Name="lockbox" ColumnName="lockbox" />
+                <ScalarProperty Name="uwblackfm" ColumnName="uwblackfm" />
+                <ScalarProperty Name="uwblackto" ColumnName="uwblackto" />
+                <ScalarProperty Name="md_coord" ColumnName="md_coord" />
+                <ScalarProperty Name="commander2" ColumnName="commander2" />
+                <ScalarProperty Name="commtitle2" ColumnName="commtitle2" />
+                <ScalarProperty Name="commlname2" ColumnName="commlname2" />
+                <ScalarProperty Name="billchap2" ColumnName="billchap2" />
+                <ScalarProperty Name="email2" ColumnName="email2" />
+                <ScalarProperty Name="mspthanks" ColumnName="mspthanks" />
+                <ScalarProperty Name="lastthank" ColumnName="lastthank" />
+                <ScalarProperty Name="seedname" ColumnName="seedname" />
+                <ScalarProperty Name="env5" ColumnName="env5" />
+                <ScalarProperty Name="origname" ColumnName="origname" />
+                <ScalarProperty Name="clientname" ColumnName="clientname" />
+                <ScalarProperty Name="chapdesig" ColumnName="chapdesig" />
+                <ScalarProperty Name="division" ColumnName="division" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="site_id" ColumnName="site_id" />
+                <ScalarProperty Name="tsm_enters" ColumnName="tsm_enters" />
+                <ScalarProperty Name="envcity" ColumnName="envcity" />
+                <ScalarProperty Name="envstate" ColumnName="envstate" />
+                <ScalarProperty Name="envzip" ColumnName="envzip" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

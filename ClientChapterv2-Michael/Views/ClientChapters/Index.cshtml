@@ -1,0 +1,405 @@
+﻿@model IEnumerable<ClientChapterv2_Michael.ClientChapter>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.chapter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tstate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chap_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.area_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.env1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.env2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.env3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.env4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.taddr1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.taddr2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.taddr3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tcity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tzip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.whokey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tran_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uw)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.commander)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comm_title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ctype)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.billchap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comm_lname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.oldchap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.memo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cust_no)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.invchap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nl_tag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origcid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origiid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.webadd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lockbox)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uwblackfm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uwblackto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.md_coord)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.commander2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.commtitle2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.commlname2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.billchap2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mspthanks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastthank)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.seedname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.env5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chapdesig)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.division)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.site_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tsm_enters)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.envcity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.envstate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.envzip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedBy)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.chapter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tstate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chap_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.area_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.env1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.env2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.env3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.env4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.taddr1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.taddr2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.taddr3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tcity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tzip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.whokey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tran_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uw)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.commander)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comm_title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ctype)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.billchap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comm_lname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.oldchap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.memo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cust_no)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.invchap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nl_tag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origcid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origiid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.webadd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lockbox)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uwblackfm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uwblackto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.md_coord)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.commander2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.commtitle2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.commlname2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.billchap2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mspthanks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastthank)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.seedname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.env5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chapdesig)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.division)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.active)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.site_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tsm_enters)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.envcity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.envstate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.envzip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedBy)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClientChapterSKey }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClientChapterSKey }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ClientChapterSKey })
+        </td>
+    </tr>
+}
+
+</table>
